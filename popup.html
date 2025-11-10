@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/popup.css">
+    <title>MedLookup</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>MEDLOOKUP</h1>
+        <form action="">
+            <label for="mSearch">Find Medication </label>
+            <input type="search" name="mSearch" id="mSearch">
+            <input type="submit" value="Search">
+        </form>
+    
+        <div class="container">
+
+            <ul aria-labelledby="tab-title">
+                <li><a id="tab1" href="#general">General</a></li>
+                <li><a id="tab1" href="#uses">Uses</a></li>
+                <li><a id="tab1" href="#images">Images</a></li>
+            </ul>
+
+            <div class="panels">
+
+                <div id="general" aria-labelledby="tab1">
+                <h3>This is the first tab</h3> 
+                </div>
+                <div id="uses" aria-labelledby="tab2">
+                    <h3>This is the second tab</h3>
+                </div>
+                <div id="images" aria-labelledby="tab3">
+                    <h3>This is the third tab</h3>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script src="./scripts/popup.js"></script>
+</html>

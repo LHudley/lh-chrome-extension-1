@@ -1,0 +1,22 @@
+{
+    "name": "MedLookup",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "Medication Search Tool",
+    "permissions": [],
+    "content_scripts": [
+        {
+            "matches": ["https://www.wikipedia.org/*"],
+            "js": ["./scripts/popup.js"],
+            "css": ["./css/popup.css"]
+        }
+    ],
+    "background": {
+        "service_worker": "./scripts/background.js"
+    },
+    "action": {
+        "default_title": "MedLookup",
+        "default_popup": "popup.html"
+    }
+}
+
