@@ -7,38 +7,20 @@
     <title>MedLookup</title>
 </head>
 <body>
-    <div class="wrapper">
-        <h1>MEDLOOKUP</h1>
-        <form action="">
-            <label for="mSearch">Find Medication </label>
-            <input type="search" name="mSearch" id="mSearch">
-            <input type="submit" value="Search">
-        </form>
+    <div class="nav">
     
-        <div class="container">
+        <img src="rxlogo.png" alt="logo">
+        
+        <ul class="nav-list">
+            <!-- li.list-item{Item$}*3 -->
+            <li class="list-item"><a href="gen">General</a></li>
+            <li class="list-item"><a href="use">Uses</a></li>
+            <li class="list-item"><a href="image">Image</a></li>
+        </ul>
 
-            <ul aria-labelledby="tab-title">
-                <li><a id="tab1" href="#general">General</a></li>
-                <li><a id="tab1" href="#uses">Uses</a></li>
-                <li><a id="tab1" href="#images">Images</a></li>
-            </ul>
-
-            <div class="panels">
-
-                <div id="general" aria-labelledby="tab1">
-                <h3>This is the first tab</h3> 
-                </div>
-                <div id="uses" aria-labelledby="tab2">
-                    <h3>This is the second tab</h3>
-                </div>
-                <div id="images" aria-labelledby="tab3">
-                    <h3>This is the third tab</h3>
-                </div>
-
-            </div>
-            
-        </div>
     </div>
+    
+        
 </body>
 <script src="./scripts/popup.js"></script>
 </html>
