@@ -9,7 +9,8 @@ body{
 }
 .nav {
     width: 100%;
-    background-color: #fcfcfc;
+    height: 50px;
+    border-bottom: 1px solid #e7e6e6;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,6 +39,36 @@ ul li a{
 }
 ul li a:hover{
     color: red;
+}
+.search{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+    padding: 14px;
+    border-radius: 28px;
+    background: #f6f6f6;
+    transition: box-shadow 0.25s;
+}
+.search-input{
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #333;
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background:transparent;
+    width: 300px;
+}
+.search:focus-within{
+    box-shadow: 0 0 2px rgba(0,0, 0, 0.75);
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
 }
 
 
