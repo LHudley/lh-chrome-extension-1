@@ -22,11 +22,35 @@
     <form  class="searchbar">
         <div class="search">
             <span class="search-icon material-symbols-outlined">search</span>
-            <input class="search-input" type = "search" placeholder="Search">
+            <input id="medQuery" class="search-input" type = "search" placeholder="Search">
+            <!-- <button id="searchClick" class="search-btn" title="Search">🔍</button> -->
         </div>
     </form>
-    
+
+    <div id="status" class="status">Enter a drug name and press Enter </div>
+ 
+    <div id="resultRx" class="sections general-info result hidden" aria-live="polite">
+        <p class="gen-row" id="generic-name">
+           <strong>Generic Name: </strong><span id="generic"></span>
+        </p>
+        <p class="gen-row" id="brand-name">
+            <strong>Brand Name: </strong><span id="synonym"></span>
+        </p>
+        <p class="gen-row"  id="drug-class">
+            <strong>RxCui: </strong><span id="rxcui"></span>
+        </p>
+    </div>
+
+
+    <div id="resultUse" class=" sections med-uses result hidden">
+        <p><strong>Med Uses</strong></p>
+    </div>
+     
+    <div id="resultImg" class=" sections med-image result hidden">
+        <p><strong>Images</strong></p>
+    </div>
         
+     <div id="error" class="error hidden"></div>
 </body>
 <script src="./scripts/popup.js"></script>
 </html>
