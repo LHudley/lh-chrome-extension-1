@@ -2,7 +2,7 @@
     "name": "MedLookup",
     "version": "1.0.0",
     "manifest_version": 3,
-    "description": "Medication Search Tool",
+    "description": "Medication lookup using RxNav + OpenFDA.",
     "action": {
         "default_title": "MedLookup",
         "default_popup": "popup.html"
@@ -13,7 +13,8 @@
     "storage"
   ],
   "host_permissions": [
-    "https://rxnav.nlm.nih.gov/*"
+    "https://rxnav.nlm.nih.gov/*",
+    "https://api.fda.gov/*"
   ]
 }
 

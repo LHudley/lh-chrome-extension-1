@@ -8,49 +8,55 @@
     <title>MedLookup</title>
 </head>
 <body>
-    <div class="nav">
-    
-        <img src="rxlogo.png" alt="logo">
+    <div class="container">
+        <div class="nav">
         
-        <ul class="nav-list">
-            <!-- li.list-item{Item$}*3 -->
-            <li class="list-item"><a href="gen">General</a></li>
-            <li class="list-item"><a href="use">Uses</a></li>
-            <li class="list-item"><a href="image">Image</a></li>
-        </ul>
-    </div>
-    <form  class="searchbar">
-        <div class="search">
-            <span class="search-icon material-symbols-outlined">search</span>
-            <input id="medQuery" class="search-input" type = "search" placeholder="Search">
-            <!-- <button id="searchClick" class="search-btn" title="Search">🔍</button> -->
+            <img src="rxlogo.png" class="logo" alt="logo">
+            
         </div>
-    </form>
+        <main>
+            <form  class="searchbar">
+                <div class="search">
+                    <span id="search-icons" class="search-icon material-symbols-outlined">search</span>
+                    <input id="medQuery" class="search-input" type = "search" placeholder="Search" >
+                </div>
+            </form>
 
-    <div id="status" class="status">Enter a drug name and press Enter </div>
- 
-    <div id="resultRx" class="sections general-info result hidden" aria-live="polite">
-        <p class="gen-row" id="generic-name">
-           <strong>Generic Name: </strong><span id="generic"></span>
-        </p>
-        <p class="gen-row" id="brand-name">
-            <strong>Brand Name: </strong><span id="synonym"></span>
-        </p>
-        <p class="gen-row"  id="drug-class">
-            <strong>RxCui: </strong><span id="rxcui"></span>
-        </p>
-    </div>
-
-
-    <div id="resultUse" class=" sections med-uses result hidden">
-        <p><strong>Med Uses</strong></p>
-    </div>
-     
-    <div id="resultImg" class=" sections med-image result hidden">
-        <p><strong>Images</strong></p>
-    </div>
+            <div id="status" class="status">Enter a drug name and press Enter </div>
         
-     <div id="error" class="error hidden"></div>
+            <div id="resultRx" class="sections general-info result hidden" aria-live="polite">
+                <p class="gen-row"  id="drug-class">
+                    <strong>RxCui: </strong><span id="rxcui"></span>
+                </p>
+                <p class="gen-row" id="generic-name">
+                    <strong>Generic Name: </strong><span id="generic"></span>
+                </p>
+                <p class="gen-row" id="brand-name">
+                    <strong>Brand Name: </strong><span id="synonym"></span>
+                </p>
+                
+            </div>
+
+
+            <div id="resultUse" class=" sections med-uses result hidden">
+                <p class= "use-row" ><strong>Clinical Description:</strong>
+                    <span id="usageText"></span>
+                </p>
+                <p class= "use-row" ><strong>Simple Description:</strong>
+                    <span id="simpleUsageText"></span>
+                </p>
+            </div>
+
+            <a href="https://lhudley.github.io/RxLookup_LandingPage/" target="_blank" class="extension-link">
+            Visit Top Prescribed Medications →
+            </a>
+
+            <div id="error" class="error hidden"></div>
+        </main>
+        <footer class="footer">
+            <small class="footer-text">© 2025 RxLookup  - L.H. - Data from RxNav (RXNorm) and Wikipedia</small>
+        </footer>
+    </div>
 </body>
 <script src="./scripts/popup.js"></script>
 </html>
