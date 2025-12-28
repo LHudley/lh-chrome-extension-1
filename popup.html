@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="A browser extension to look up medication information including uses, side effects, and interactions.">
+    <meta name="author" content="L.Hudley">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/popup.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
@@ -34,6 +36,9 @@
                 <p class="gen-row" id="brand-name">
                     <strong>Brand Name: </strong><span id="synonym"></span>
                 </p>
+                <p class="gen-row" id="class-name">
+                    <strong>Clinical Drug Class: </strong><span id="drugClass"></span>
+                </p>
                 
             </div>
 
@@ -47,14 +52,14 @@
                 </p>
             </div>
 
-            <a href="https://lhudley.github.io/RxLookup_LandingPage/" target="_blank" class="extension-link">
+            <a href="https://www.rxlookupz.com" target="_blank" class="extension-link">
             Visit Top Prescribed Medications →
             </a>
 
             <div id="error" class="error hidden"></div>
         </main>
         <footer class="footer">
-            <small class="footer-text">© 2025 RxLookup  - L.H. - Data from RxNav (RXNorm) and Wikipedia</small>
+            <small class="footer-text">Data from RxNav (RXNorm), OpenFDA and Wikipedia</small>
         </footer>
     </div>
 </body>

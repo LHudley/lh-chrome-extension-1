@@ -1,20 +1,24 @@
 {
-    "name": "MedLookup",
+    "name": "RxLookup",
     "version": "1.0.0",
     "manifest_version": 3,
-    "description": "Medication lookup using RxNav + OpenFDA.",
+    "icons": {
+        "16": "icons/imagemg16.png",
+        "48": "icons/imagemg48.png",
+        "128": "icons/imagemg48.png"
+    },
+    "description": "A quick medication lookup tool using RxNav + OpenFDA and Wikipedia.",
     "action": {
-        "default_title": "MedLookup",
+        "default_title": "RxLookup",
         "default_popup": "popup.html"
     },
     "permissions": [
-    "activeTab",
-    "scripting",
     "storage"
   ],
   "host_permissions": [
     "https://rxnav.nlm.nih.gov/*",
-    "https://api.fda.gov/*"
+    "https://api.fda.gov/*",
+    "https://en.wikipedia.org/*"
   ]
 }
 
